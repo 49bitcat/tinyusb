@@ -802,7 +802,8 @@ void dcd_int_disable(uint8_t rhport) {
   fsdev_int_disable(rhport);
 }
 
-  #if defined(USB_BCDR_DPPU) || defined(SYSCFG_PMC_USB_PU) || defined(EXTEN_USBD_PU_EN)
+  // #if defined(USB_BCDR_DPPU) || defined(SYSCFG_PMC_USB_PU) || defined(EXTEN_USBD_PU_EN)
+  #if 0
 void dcd_connect(uint8_t rhport) {
   fsdev_connect(rhport);
 }
